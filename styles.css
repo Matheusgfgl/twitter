@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+button{
+  outline: 0;
+}
+
+body{
+  background: #e6ecf0;
+  font-family: 'Helvetica neue' , 'Helvetica', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header#main-header{
+  
+  height: 40px;
+  background: white;
+  box-shadow: 0 1px 1px rgb(0, 0 ,0, .25);
+  position: relative;
+  z-index: 1;
+}
+
+header#main-header .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header#main-header nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+
+header#main-header nav ul li{
+display: flex;
+align-items: center;
+
+ font-size: 13px;
+ color: #667580;
+ font-weight: bold;
+ margin-left: 30px;
+ 
+}
+
+header#main-header nav ul li img{
+  margin-right: 10px;
+}
+header#main-header div.side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header#main-header div.side img{
+  width: 35px;
+  height: 34px;
+
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+header#main-header div.side button{
+  background: #3bb9e3;
+  height: 34px;
+  width: 90px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+
+  border-radius: 16px;
+}
+header#main-header div.side input{
+  width: 220px;
+  border: 1px solid #E6ECF0;
+  border-radius: 16px;
+
+  height: 34px;
+  padding: 0 30px 0 12px;
+  font-size: 12px;
+  color: #667581;
+  background:  #F5f8fa url('/images/search.svg') no-repeat 190px center;
+}
+
+div.banner{
+  height: 340px;
+  width: 100%;
+  background: #3bb9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFF;
+}
+
+div.bar{
+  height: 59px;
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0 0 0 .40);
+ 
+}
+
+div.bar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 285px;
+  height: 100%;
+}
+div.bar .content ul{
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+div.bar .content ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  position: relative;
+}
+div.bar .content ul li.active::after{ /* Adicionar elemento no final do li*/
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3bb9e3;
+}
+
+div.bar .content ul li span{
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.bar .content ul li strong{
+    font-size: 18px;
+    color: #667580;
+    margin-top: 2px;
+    
+}
+div.bar .content ul li.active strong{
+  color: #3bb9e3;
+}
+div.bar .content .actions{
+  display: flex;
+}
+
+div.bar .content .actions button{
+  height: 34px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 14px;
+
+  border: 1px solid  #3bb9e3 ;
+  border-radius: 16px;
+  margin-right: 20px;
+  color: #3bb9e3;
+  background: #FFF;
+}
+
+div.wrapper-content {
+  display: flex;
+
+}
+div.wrapper-content aside.profile{
+  width: 260px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+div.wrapper-content aside.profile img.avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-top: -130px;
+}
+div.wrapper-content aside.profile h1{
+  font-size: 21px;
+  color: #1f2226;
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.profile span{
+  font-size: 14px;
+  color: #53626C;
+  
+}
+div.wrapper-content aside.profile p{
+  font-size: 14px;
+  color: #1f2226;
+  margin-top: 15px;
+  
+}
+div.wrapper-content aside.profile ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+div.wrapper-content aside.profile ul li{
+  font-size: 14px;
+  color: #657786;
+
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+div.wrapper-content aside.profile ul li img{
+  margin-right: 10px;
+}
+
+div.wrapper-content aside.profile .widget{
+  padding-top: 20px;
+}
+div.wrapper-content aside.profile .widget strong{
+  font-weight: normal;
+  font-size: 14px;
+  color: #3bb9e3;
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper-content aside.profile .widget img{
+  margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .followrs ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+div.wrapper-content aside.profile .followrs ul li {
+  background:  #d0d5d9;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  flex: 1 0 auto;
+  margin: 0 5px 5px 0px;
+}
+
+div.wrapper-content aside.profile .images ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+div.wrapper-content aside.profile .images ul li {
+  background: #d0d5d9;
+  height: 80px;
+  width: 80px;
+  flex: 1 0 auto;
+  margin: 0 5px 5px 0px;
+}
